@@ -26,3 +26,11 @@ body {
 a {
   color: var(--highlight-dark);
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark);
+}
+
+p {
+  color: var(--border-grey);
+}
