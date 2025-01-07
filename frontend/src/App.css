@@ -11,7 +11,9 @@
   --component-bg-dark: #1E1E1F;
   --component-fg-dark: #282829;
   --text-dark: #FAFAFA;
+  --text-alt-dark: #D6D6D6;
   --highlight-dark: #30CF86;
+  --border-grey: #525252;
   --ff-poppins: 'Poppins', sans-serif;
 }
 
