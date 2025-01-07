@@ -6,4 +6,5 @@ COPY . .
 RUN npx tsc
 EXPOSE 5000
 CMD ["node", "dist/index.js"]
+CMD ["npm", "run", "dev"]
 

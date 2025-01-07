@@ -1,24 +1,26 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: HomepageFont;
+  src: url('./fonts/montserrat/Montserrat-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+:root {
+  --bg-dark: #121212;
+  --component-bg-dark: #1E1E1F;
+  --component-fg-dark: #282829;
+  --text-dark: #FAFAFA;
+  --highlight-dark: #30CF86;
+  --ff-poppins: 'Poppins', sans-serif;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+body {
+  background-color:  var(--bg-dark);
+  color: var(--text-dark);
+  font-family: 'HomepageFont', sans-serif;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+a {
+  color: var(--highlight-dark);
 }
