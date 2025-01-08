@@ -35,3 +35,8 @@
 .badge {
    color: var(--text-alt-dark) !important;
 }
+
+
+.bi {
+   color: var(--text-alt-dark);
+ }
