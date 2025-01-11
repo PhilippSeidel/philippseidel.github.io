@@ -14,10 +14,16 @@
  }
 
  .custom-navbar .nav-link {
+   .bi {
+      color: var(--text-alt-dark);
+   }
     color: var(--text-alt-dark); 
  }
 
  .custom-navbar .nav-link.active{
+   .bi {
+      color: var(--highlight-dark);
+   }
     color: var(--highlight-dark); 
  }
 
@@ -35,8 +41,3 @@
 .badge {
    color: var(--text-alt-dark) !important;
 }
-
-
-.bi {
-   color: var(--text-alt-dark);
- }

@@ -13,35 +13,35 @@ function Header() {
                         <NavLink 
                         to="/"
                         className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                            About
+                            <i className="bi bi-cup-hot-fill"></i> Home
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink 
                         to="/resume"
                         className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                            Resume
+                            <i className="bi bi-folder2-open"></i> Resume
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink 
                         to="/projects"
                         className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                            Projects
+                            <i className="bi bi-rocket-takeoff"></i> Projects
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink 
                         to="/blog"
                         className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                            Blog
+                            <i className="bi bi-journal-bookmark-fill"></i> Blog
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink 
                         to="/imprint"
                         className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                            Imprint
+                            <i className="bi bi-fingerprint"></i> Imprint
                         </NavLink>
                     </li>
                     </ul>
