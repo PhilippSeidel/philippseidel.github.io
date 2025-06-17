@@ -28,5 +28,5 @@ ul {
 }
 
 .badge {
-    color: var(--bg-dark) !important;
+    color: var(--bg-dark);
 }

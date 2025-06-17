@@ -5,7 +5,7 @@ function Header() {
     return (
         <nav className="navbar navbar-expand-lg custom-navbar">
           <div className="container">
-            <a className="navbar-brand" href="/">Philipp Seidel <span className="badge text-bg-secondary">CS Enjoyer</span></a>
+            <a className="navbar-brand" href="/">Philipp Seidel <span className="badge me-1">CS Enjoyer</span></a>
             <div className="d-flex justify-content-center">
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="nav nav-tabs">

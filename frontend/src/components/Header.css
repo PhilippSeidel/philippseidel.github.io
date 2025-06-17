@@ -39,6 +39,7 @@
 }
 
 .badge {
-   color: var(--text-alt-dark) !important;
+   color: var(--text-alt-dark);
+   background-color: var(--highlight-dark);
 }
 
