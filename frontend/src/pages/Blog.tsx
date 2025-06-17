@@ -188,7 +188,7 @@ const Blog: React.FC = () => {
                 >
                 <span
                                 key={tag.id}
-                                className="badge bg-secondary me-1"
+                                className="badge me-1"
                                 style={{backgroundColor: getColorForTag(tagsMap[tag.id]?.name)}}
                                 title={`Tag: ${tagsMap[tag.id]?.name || "Unknown"}`}
                             >
@@ -216,7 +216,7 @@ const Blog: React.FC = () => {
                                 post.tags.map((tagId) => (
                                 <span
                                     key={tagId}
-                                    className="badge bg-secondary me-1"
+                                    className="badge me-1"
                                     style={{backgroundColor: getColorForTag(tagsMap[tagId]?.name)}}
                                     title={`Tag: ${tagsMap[tagId]?.name || "Unknown"}`}
                                 >
