@@ -3,3 +3,30 @@ ul {
     margin: 0;
     padding: 0;
   }
+
+.list-group-item {
+    color: var(--text-dark);
+    background-color: var(--component-bg-dark);
+    border-style: none;
+}
+.form-select {
+    color: var(--text-dark);
+    background-color: var(--component-fg-dark);
+    border-style: var(--border-grey);
+}
+
+.form-check-input {
+    color: var(--text-dark);
+    background-color: var(--text-alt-dark);
+    border-style: var(--border-grey);
+}
+
+.form-check-input:checked {
+    color: var(--text-dark);
+    background-color: var(--highlight-dark);
+    border-style: var(--highlight-dark);   
+}
+
+.badge {
+    color: var(--bg-dark) !important;
+}
