@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 function Header() {
     return (
         <nav className="navbar navbar-expand-lg custom-navbar">
@@ -48,6 +49,7 @@ function Header() {
                 </div>
             </div>
           </div>
+          <ThemeToggle />
         </nav>
       );
 };

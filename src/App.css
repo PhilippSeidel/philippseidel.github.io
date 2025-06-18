@@ -6,7 +6,18 @@
 }
 
 
-:root {
+[data-bs-theme="light"] {
+  --bg-dark: #F9F9F9;               
+  --component-bg-dark: #FFFFFF;     
+  --component-fg-dark: #F0F0F0;     
+  --text-dark: #121212;             
+  --text-alt-dark: #4A4A4A;         
+  --highlight-dark: #1BAF6A;        
+  --border-grey: #C4C4C4;           
+  --ff-poppins: 'Poppins', sans-serif;
+}
+
+[data-bs-theme="dark"] {
   --bg-dark: #121212;
   --component-bg-dark: #1E1E1F;
   --component-fg-dark: #282829;
