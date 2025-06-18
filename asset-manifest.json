@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.62a4c0fb.css",
+    "main.js": "/react-gh-pages/static/js/main.e45f2442.js",
+    "static/media/Montserrat-Regular.otf": "/react-gh-pages/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
+    "static/media/bootstrap-icons.woff?": "/react-gh-pages/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/react-gh-pages/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/react-gh-pages/index.html",
+    "main.62a4c0fb.css.map": "/react-gh-pages/static/css/main.62a4c0fb.css.map",
+    "main.e45f2442.js.map": "/react-gh-pages/static/js/main.e45f2442.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62a4c0fb.css",
+    "static/js/main.e45f2442.js"
+  ]
+}
