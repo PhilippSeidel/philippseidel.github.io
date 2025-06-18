@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import './Blog.css';
+import ReadMoreElement from "../components/ReadMoreElement";
+import './Projects.css';
 
 interface WPPost {
   id: number;
@@ -12,6 +13,12 @@ interface WPPost {
   };
   date: string; 
   tags: number[]; 
+  _embedded?: {
+    "wp:featuredmedia"?: Array<{
+      source_url: string;
+      alt_text: string;
+    }>;
+  };
 }
 
 interface WPCategory {
@@ -27,7 +34,7 @@ interface WPTag {
 }
 
 
-const Blog: React.FC = () => {
+const Projects: React.FC = () => {
   const [posts, setPosts] = useState<WPPost[]>([]);
   const [tagsMap, setTagsMap] = useState<Record<number, WPTag>>({});
   const [sortedPosts, setSortedPosts] = useState<WPPost[]>([]);
@@ -40,19 +47,19 @@ const Blog: React.FC = () => {
   const WORDPRESS_API_URL = "https://wordpress.philipp-seidel.de/wp-json/wp/v2";
 
   useEffect(() => {
-    const fetchBlogPosts = async () => {
+    const fetchProjectsPosts = async () => {
       try {
         const categoryResponse = await axios.get<WPCategory[]>(
-          `${WORDPRESS_API_URL}/categories?slug=blog`
+          `${WORDPRESS_API_URL}/categories?slug=projects`
         );
-        const blogCategory = categoryResponse.data[0];
+        const projectsCategory = categoryResponse.data[0];
 
-        if (!blogCategory) {
-          throw new Error("Blog category not found.");
+        if (!projectsCategory) {
+          throw new Error("Projects category not found.");
         }
 
         const postsResponse = await axios.get<WPPost[]>(
-          `${WORDPRESS_API_URL}/posts?categories=${blogCategory.id}`
+          `${WORDPRESS_API_URL}/posts?categories=${projectsCategory.id}&_embed=true`
         );
         setPosts(postsResponse.data);
 
@@ -83,7 +90,7 @@ const Blog: React.FC = () => {
       }
     };
 
-    fetchBlogPosts();
+    fetchProjectsPosts();
   }, []);
 
   useEffect(() => {
@@ -135,12 +142,11 @@ const Blog: React.FC = () => {
     return `hsl(${hue}, 65%, 70%)`; // pastel tone
   };
 
-  if (loading) return <p>Loading blog...</p>;
+  if (loading) return <p>Loading projects...</p>;
   if (error) return <p>Error: {error}</p>;
-
   return (
     <section>
-        <h1><i className="bi bi-journal-bookmark-fill"></i> Some stuff I'd like to tell you</h1>
+        <h1><i className="bi bi-rocket-takeoff"></i> What I worked on</h1>
         <div className="row mb-3 align-items-center">
 
         <div className="col-md-6">
@@ -202,52 +208,48 @@ const Blog: React.FC = () => {
 
       </div>
       <ul className="list-group">
-        {sortedPosts.map((post) => (
-            <div className="container d-flex justify-content-center align-items-center p-5">
-            <div className="col-md">
-                <div className="card">
-                  <div className="card-body">
-                    <main className="flex-grow-1 container">{
-                        <li className="list-group-item mb-3" key={post.id}>
-                        <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                        
-                        <div className="mt-2 mb-2">
-                            {post.tags.length > 0 ? (
-                                post.tags.map((tagId) => (
-                                <span
-                                    key={tagId}
-                                    className="badge me-1"
-                                    style={{backgroundColor: getColorForTag(tagsMap[tagId]?.name)}}
-                                    title={`Tag: ${tagsMap[tagId]?.name || "Unknown"}`}
-                                >
-                                    {tagsMap[tagId]?.name || "Unknown"}
-                                </span>
-                                ))
-                            ) : (
-                                <span className="text-muted fst-italic">No tags</span>
-                            )}
-                        </div>
-                        <p>
-                            <em>{new Date(post.date).toLocaleString(undefined, {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric',
-                            hour: '2-digit',
-                            minute: '2-digit'
-                            })}</em>
-                        </p>
-                        <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-                      </li>
-                    }</main>
-                  </div>
+        <div className="row">
+            {sortedPosts.map((post) => (
+                <div key={post.id} className="col-md-4 mb-4">
+                    <div className="card h-100">
+                    {post._embedded?.["wp:featuredmedia"]?.[0] && (
+                        <img src={post._embedded?.["wp:featuredmedia"]?.[0].source_url} className="card-img-top" alt={post._embedded?.["wp:featuredmedia"]?.[0].alt_text || "Project Post Image"}/>  
+                                    )}
+                        <div className="card-body">
+                            <main className="flex-grow-1 container">{
+                                <li className="list-group-item mb-3" key={post.id}>
+                                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                                
+                                <div className="mt-2 mb-2">
+                                    {post.tags.length > 0 ? (
+                                        post.tags.map((tagId) => (
+                                        <span
+                                            key={tagId}
+                                            className="badge me-1"
+                                            style={{backgroundColor: getColorForTag(tagsMap[tagId]?.name)}}
+                                            title={`Tag: ${tagsMap[tagId]?.name || "Unknown"}`}
+                                        >
+                                            {tagsMap[tagId]?.name || "Unknown"}
+                                        </span>
+                                        ))
+                                    ) : (
+                                        <span className="text-muted fst-italic">No tags</span>
+                                    )}
+                                </div>
+                                <ReadMoreElement>
+                                    <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                </ReadMoreElement>
+                            </li>
+                            }</main>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-        ))}
+            ))}
+        </div> 
       </ul>
     </section>
     
   );
 };
 
-export default Blog;
+export default Projects;

@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://philippseidel.github.io/react-gh-pages",
+  "homepage": "https://philippseidel.github.io",
   "dependencies": {
     "axios": "^1.10.0",
     "bootstrap": "^5.3.3",
