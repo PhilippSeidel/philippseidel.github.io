@@ -1,8 +1,0 @@
-@import '../App.css';
-
-.p-2 {
-    a {
-        color: var(--text-alt-dark);
-        text-decoration: none;
-    }
-}
