@@ -1,0 +1,11 @@
+@import '../App.css';
+
+.card {
+    color: var(--text-dark);
+    background-color: var(--component-bg-dark);
+    border-color: var(--border-grey);
+}
+
+.card-body {
+    color: var(--text-dark);
+}

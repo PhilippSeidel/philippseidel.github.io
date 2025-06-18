@@ -1,0 +1,45 @@
+@import '../App.css';
+
+.custom-navbar {
+    background-color: var(--component-bg-dark); 
+    color: var(--text-dark);
+  }
+
+.custom-navbar .navbar-brand {
+    color: var(--text-dark); 
+ }
+
+ .custom-navbar .nav-item {
+    color: var(--text-dark); 
+ }
+
+ .custom-navbar .nav-link {
+   .bi {
+      color: var(--text-alt-dark);
+   }
+    color: var(--text-alt-dark); 
+ }
+
+ .custom-navbar .nav-link.active{
+   .bi {
+      color: var(--highlight-dark);
+   }
+    color: var(--highlight-dark); 
+ }
+
+
+.nav-tabs {
+    border-bottom: var(--bs-nav-tabs-border-width) solid var(--component-bg-dark );
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--highlight-dark);
+    background-color: var(--component-bg-dark);
+    border-color: var(--component-bg-dark);
+}
+
+.badge {
+   color: var(--text-alt-dark);
+   background-color: var(--highlight-dark);
+}
+

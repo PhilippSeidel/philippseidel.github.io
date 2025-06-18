@@ -1,0 +1,45 @@
+@font-face {
+  font-family: HomepageFont;
+  src: url('./fonts/montserrat/Montserrat-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+  --bg-dark: #121212;
+  --component-bg-dark: #1E1E1F;
+  --component-fg-dark: #282829;
+  --text-dark: #FAFAFA;
+  --text-alt-dark: #D6D6D6;
+  --highlight-dark: #30CF86;
+  --border-grey: #525252;
+  --ff-poppins: 'Poppins', sans-serif;
+}
+
+body {
+  background-color:  var(--bg-dark);
+  color: var(--text-dark);
+  font-family: 'HomepageFont', sans-serif;
+}
+
+a {
+  color: var(--highlight-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark);
+}
+
+p {
+  color: var(--text-dark);
+}
+
+.bi {
+  color: var(--highlight-dark);
+}
+
+
+.bi-github, .bi-linkedin, .bi-instagram {
+  color: var(--text-alt-dark);
+}
