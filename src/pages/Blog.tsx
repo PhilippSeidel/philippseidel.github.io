@@ -140,7 +140,7 @@ const Blog: React.FC = () => {
     <div className="loader"></div> 
   </section>);
   if (error) return <p>Error: {error}</p>;
-
+  if (posts.length == 0) return <h3><i className="bi bi-clipboard2-x"></i> No Blog Posts yet! Come back later!</h3>;
   return (
     <section>
         <h1><i className="bi bi-journal-bookmark-fill"></i> Some stuff I'd like to tell you</h1>

@@ -40,6 +40,13 @@ function Header() {
                     </li>
                     <li className="nav-item">
                         <NavLink 
+                        to="/gallery"
+                        className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                            <i className="bi bi-camera"></i> Gallery
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink 
                         to="/imprint"
                         className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
                             <i className="bi bi-fingerprint"></i> Imprint
