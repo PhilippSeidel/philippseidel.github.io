@@ -54,3 +54,22 @@ p {
 .bi-github, .bi-linkedin, .bi-instagram {
   color: var(--text-alt-dark);
 }
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px var(--text-dark);
+  background: conic-gradient(var(--text-dark) 0 0) 0/0 100% no-repeat text;
+  animation: l11 1.0s steps(11,jump-none) infinite;
+}
+.loader:before {
+  content: "Loading...";
+}
+@keyframes l11 {
+  to {background-size: 100% 100%}
+}

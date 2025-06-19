@@ -142,7 +142,10 @@ const Projects: React.FC = () => {
     return `hsl(${hue}, 65%, 70%)`; // pastel tone
   };
 
-  if (loading) return <p>Loading projects...</p>;
+  if (loading) return (
+    <section>
+      <div className="loader"></div> 
+    </section>);
   if (error) return <p>Error: {error}</p>;
   return (
     <section>
