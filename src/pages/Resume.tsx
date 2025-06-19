@@ -56,8 +56,8 @@ const Resume: React.FC = () => {
       <br/>
       <h5><i className="bi bi-puzzle"></i> Other Skills</h5>
       <p>
-        <span className="badge me-2 skill-badge py-1" style={{backgroundColor: "#0ba387"}}><i className="bi bi-clipboard-check bi-skill"></i>Teaching</span>
-        <span className="badge me-2 skill-badge py-1" style={{backgroundColor: "#0b57a3"}}><i className="bi bi-mortarboard bi-skill"></i>Academic Research</span>
+        <span className="badge me-2 skill-badge py-1" style={{backgroundColor: "#0ba387"}}><i className="bi bi-clipboard-check bi-skill"></i> Teaching</span>
+        <span className="badge me-2 skill-badge py-1" style={{backgroundColor: "#0b57a3"}}><i className="bi bi-mortarboard bi-skill"></i> Academic Research</span>
         <span className="badge me-2 skill-badge py-1" style={{backgroundColor: "#61DACB"}}><i className="devicon-latex-original"/> LaTeX</span>
       </p>
     </section>
