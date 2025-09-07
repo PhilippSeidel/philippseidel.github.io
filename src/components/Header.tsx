@@ -8,9 +8,6 @@ function Header() {
             <nav className="navbar navbar-expand-lg custom-navbar ">
             <div className="container">
                 <a className="navbar-brand" href="/">Philipp Seidel <span className="badge me-1">CS Enjoyer</span></a>
-                <div className='d-lg-none'>
-                    <ThemeToggle />
-                </div>
                 <div className="d-flex justify-content-center">
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="nav nav-tabs">
@@ -59,8 +56,11 @@ function Header() {
                         </ul>
                     </div>
                 </div>
+                <div className='d-lg-block'>
+                    <ThemeToggle />
+                </div>
             </div>
-            <div className='d-none d-lg-block d-xl-none'>
+            <div className='d-none d-m-block d-xl-none'>
                 <ThemeToggle />
             </div>
             </nav>
