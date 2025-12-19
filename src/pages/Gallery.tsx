@@ -2,6 +2,68 @@ import React from 'react';
 import ImageGallery from '../components/ImageGallery';
 
 const Gallery: React.FC = () => {
+    const travel_images = [
+        {
+            src: '/gallery_images/world_tour/madrid_1.jpg',
+            alt: 'Madrid notes',
+        },
+        {
+            src: '/gallery_images/world_tour/budapest_1.jpg',
+            alt: 'Budapest sunset',
+        },
+        {
+            src: '/gallery_images/world_tour/island_1.jpg',
+            alt: 'Diamond beach sunset',
+        },
+        {
+            src: '/gallery_images/world_tour/island_2.jpg',
+            alt: 'Ice and snow Iceland',
+        },
+        {
+            src: '/gallery_images/world_tour/island_3.jpg',
+            alt: 'Oil platform ocean',
+        },
+        {
+            src: '/gallery_images/world_tour/island_4.jpg',
+            alt: 'Faroe Islands',
+        },
+        {
+            src: '/gallery_images/world_tour/island_5.jpg',
+            alt: 'Ship harbor Iceland',
+        },
+        {
+            src: '/gallery_images/world_tour/island_6.jpg',
+            alt: 'Ice skating Iceland',
+        },
+        {
+            src: '/gallery_images/world_tour/nyc_1.jpg',
+            alt: 'Statue of liberty',
+        },
+        {
+            src: '/gallery_images/world_tour/nyc_2.jpg',
+            alt: 'Brooklyn bridge',
+        },
+        {
+            src: '/gallery_images/world_tour/nyc_3.jpg',
+            alt: 'Sunset NYC',
+        },
+        {
+            src: '/gallery_images/world_tour/nyc_4.jpg',
+            alt: 'NYC',
+        },
+        {
+            src: '/gallery_images/world_tour/vietnam_1.jpg',
+            alt: 'Coffee farm Vietnam',
+        },
+        {
+            src: '/gallery_images/world_tour/vietnam_2.jpg',
+            alt: 'Rice field Vietnam',
+        },
+        {
+            src: '/gallery_images/world_tour/vietnam_3.jpg',
+            alt: 'Temple Vietnam',
+        },
+    ];
     const bw_images = [
         {
             src: '/gallery_images/black_and_white/bw1.jpeg',
@@ -63,9 +125,12 @@ const Gallery: React.FC = () => {
     return (
         <section>
         <h1><i className="bi bi-camera"></i> Now look at this!</h1>
+        <h3>Some highlights from traveling around the world 2024/2025</h3>
+        <ImageGallery images={travel_images} />
+        <br/>
         <h3>Black and White Analogs, self-developed 2024</h3>
         <ImageGallery images={bw_images} />
-        <br/>   
+        <br/>
         <h3>Kodak Gold 2024</h3>
         <ImageGallery images={kg_images} />
         <br/>   
