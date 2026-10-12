@@ -46,7 +46,8 @@ const Home: React.FC = () => {
         <br></br>
         <br></br>
       <p className="lead">
-        I'm Philipp Seidel, computer science enthusiast, former research assistant at KIT and master student at KTH. My hobbies include programming, reading, skiing, traveling and camping, visiting the local sauna as well as politics and history. I have worked as a tutor before, helping others pass the software engineering course at KIT as well as a student assistant at the H²T institute at KIT. I'm currently enrolled in the 'Systems, Control and Robotics' Master programme a KTH. I have a passion for robotics and am deeply fascinated by the field of embodied AI. If you want to have a look at some of my past projects you came to the right place.
+        I'm Philipp Seidel, robotics and computer science enthusiast and master student at KTH. I'm currently enrolled in the 'Systems, Control and Robotics' Master programme a KTH, where I also work as a research assistant at the Robots, Perception and Learning (RPL) group, doing research on robot learning with humanoid robots. Previously I worked as a research assistant at the High-Performance Humanoid Technologies (H²T) group at KIT in Germany. I have a passion for robotics and am deeply fascinated by the field of embodied AI and the use cases for robotics in medicine. If you want to have a look at some of my past projects you came to the right place.
+        <br></br>My hobbies include programming, reading, skiing, traveling and camping, visiting the local sauna as well as politics and history.
         <br/><br/>I'm excited to meet new people and ideas. If you are a nice person and would like to contact me, feel free to do so!
         <br/>Otherwise don't. :) 
       </p>
