@@ -27,7 +27,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <p className="text-center">&copy; 2025 Philipp Seidel</p>
+      <p className="text-center">&copy; 2026 Philipp Seidel</p>
     </footer>
   );
 };
