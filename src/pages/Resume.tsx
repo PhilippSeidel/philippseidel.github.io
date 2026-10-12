@@ -19,7 +19,7 @@ const Resume: React.FC = () => {
       <h3><i className="bi bi-pc-display"></i> Professional Experience</h3>
       <br/>
       <p>
-        <b>Sep 2023 - present:</b> Research Assistant at <a href='https://www.kth.se/rpl/'>RPL</a> (Research project in cooperation with <a href='https://www.incar-robotics.se/'>INCAR Robotics</a>)<br/>
+        <b>Sep 2026 - present:</b> Research Assistant at <a href='https://www.kth.se/rpl/'>RPL</a> (Research project in cooperation with <a href='https://www.incar-robotics.se/'>INCAR Robotics</a>)<br/>
         <br/>
         <b>Feb 2023 - Mar 2024:</b> Research Assistant at <a href='https://h2t.iar.kit.edu/'>H<sup>2</sup>T</a> (<a href='https://h2t.iar.kit.edu/english/21_2658.php'>JuBot</a> Project)<br/>
         <br/>
