@@ -19,11 +19,13 @@ const Resume: React.FC = () => {
       <h3><i className="bi bi-pc-display"></i> Professional Experience</h3>
       <br/>
       <p>
-        <b>Feb 2023 - Mar 2024:</b> Student Assistant at <a href='https://h2t.iar.kit.edu/'>H<sup>2</sup>T</a> (<a href='https://h2t.iar.kit.edu/english/21_2658.php'>JuBot</a> Project)<br/>
+        <b>Sep 2023 - present:</b> Research Assistant at <a href='https://www.kth.se/rpl/'>RPL</a> (Research project in cooperation with <a href='https://www.incar-robotics.se/'>INCAR Robotics</a>)<br/>
         <br/>
-        <b>Sep 2022 - Feb 2023:</b> Student Assistant at <a href='https://tva.kastel.kit.edu/'>TVA</a> (<a href='https://www.provideq.org/'>ProvideQ</a> Project)<br/>
+        <b>Feb 2023 - Mar 2024:</b> Research Assistant at <a href='https://h2t.iar.kit.edu/'>H<sup>2</sup>T</a> (<a href='https://h2t.iar.kit.edu/english/21_2658.php'>JuBot</a> Project)<br/>
         <br/>
-        <b>2020 - 2022:</b> Tutor in Software Engineering and eezi
+        <b>Sep 2022 - Feb 2023:</b> Research Assistant at <a href='https://tva.kastel.kit.edu/'>TVA</a> (<a href='https://www.provideq.org/'>ProvideQ</a> Project)<br/>
+        <br/>
+        <b>2020 - 2022:</b> Teching Assistant in Software Engineering and eezi
       </p>
       <br/>
       <h3><i className="bi bi-boxes"></i> Skills</h3>
